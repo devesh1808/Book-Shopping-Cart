@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Amazon from "./components/amazon";
 import Navbar from "./components/navbar";
 import Cart from "./components/cart";
-
-//uplifting
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -23,10 +21,6 @@ const App = () => {
     if (arr[ind].amount === 0) arr[ind].amount = 1;
     setCart([...arr]);
   };
-
-  // useEffect(() => {
-  //   console.log("cart change");
-  // }, [cart]);
 
   return (
     <>
